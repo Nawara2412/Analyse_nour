@@ -1,10 +1,9 @@
-# 🩺 Doctoome — Étude de Cas Technique Data
+Doctoome — Étude de Cas Technique Data
 > **Analyse du Funnel de Conversion & Sensibilisation au Diabète de Type 2**  
-> *Recrutement Stage Data Engineer / Data Analyst (6 mois)* — Réalisé par **Nour**
 
 ---
 
-## 📌 Présentation du Projet
+## Présentation du Projet
 
 Ce projet a pour objectif d'analyser les données de navigation, d'engagement et de résultats cliniques issues du questionnaire de sensibilisation au **diabète de type 2** déployé par **Doctoome**.
 
@@ -17,7 +16,7 @@ L'objectif central est d'auditer la donnée, d'identifier les goulets d'étrangl
 
 ---
 
-## 🗂️ Architecture du Répertoire
+## Architecture du Répertoire
 
 ```text
 ├── data/                               # Données brutes au format Parquet
@@ -41,7 +40,7 @@ L'objectif central est d'auditer la donnée, d'identifier les goulets d'étrangl
 
 ---
 
-## 🛠️ Stack Technique Utilisée
+## Stack Technique Utilisée
 
 - **Langages** : Python 3.10+, SQL (DuckDB in-process)
 - **Traitement & Modélisation** : `pandas`, `pyarrow`, `fastparquet`, `duckdb`
@@ -50,7 +49,7 @@ L'objectif central est d'auditer la donnée, d'identifier les goulets d'étrangl
 
 ---
 
-## 🔍 Synthèse Méthodologique & Réalisations
+## Synthèse Méthodologique & Réalisations
 
 Le travail réalisé dans [`analyse_nour.ipynb`](analyse_nour.ipynb) s'articule autour de 8 axes majeurs :
 
@@ -67,7 +66,7 @@ Le travail réalisé dans [`analyse_nour.ipynb`](analyse_nour.ipynb) s'articule 
 ### 3. Analyse du Funnel de Conversion & Frictions
 - **Étape 1 — Arrivée (Landing)** : 26 000 sessions (100%).
 - **Étape 2 — Démarrage du questionnaire** : 16 774 sessions (**64.5%**).  
-  🚨 **Point de fuite critique (-35.5%)** : 9 226 visiteurs quittent la page sans interagir.
+   **Point de fuite critique (-35.5%)** : 9 226 visiteurs quittent la page sans interagir.
 - **Étape 3 — Parcours des Questions (Q1 à Q5)** : Excellente rétention entre Q1 et Q4 (~95%), puis un **décrochage notable de 13.5% entre Q4 et Q5** (question sur la glycémie/antécédents perçue comme engageante ou technique).
 - **Étape 4 — Complétion** : 11 357 questionnaires validés (**43.7% de complétion globale** et **67.7%** parmi ceux qui ont cliqué sur Démarrer).
 
@@ -90,7 +89,7 @@ Le travail réalisé dans [`analyse_nour.ipynb`](analyse_nour.ipynb) s'articule 
 
 ---
 
-## 📊 Visualisations Clés
+## Visualisations Clés
 
 | Funnel de Conversion Global | Taux de Complétion par Appareil |
 |:---:|:---:|
@@ -103,7 +102,7 @@ Le travail réalisé dans [`analyse_nour.ipynb`](analyse_nour.ipynb) s'articule 
 
 ---
 
-## 💻 Exemples de Requêtes SQL (DuckDB)
+## Exemples de Requêtes SQL (DuckDB)
 
 ### 1. Déduplication par Window Function
 ```sql
@@ -145,7 +144,7 @@ ORDER BY age_moyen DESC;
 
 ---
 
-## 🎯 Réponses aux 4 Questions Stratégiques du Sujet
+## Réponses aux 4 Questions Stratégiques du Sujet
 
 ### 1. Quels sont les résultats les plus importants ?
 1. **La déperdition majeure se produit sur la Landing Page (35.5% d'abandon immédiat)** : 9 226 utilisateurs partent sans cliquer sur "Démarrer".
@@ -176,7 +175,7 @@ ORDER BY age_moyen DESC;
 
 ---
 
-## 🚀 Instructions de Reproduction
+## Instructions de Reproduction
 
 ### Prérequis
 - Python 3.10 ou supérieur
